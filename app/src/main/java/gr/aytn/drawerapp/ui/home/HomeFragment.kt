@@ -4,15 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import gr.aytn.drawerapp.CustomAdapter
-import gr.aytn.drawerapp.Item
-import gr.aytn.drawerapp.R
+import gr.aytn.drawerapp.*
 import gr.aytn.drawerapp.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {

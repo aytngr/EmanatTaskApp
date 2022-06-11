@@ -1,13 +1,16 @@
 package gr.aytn.drawerapp
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import gr.aytn.drawerapp.R
+import gr.aytn.drawerapp.config.prefs
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,10 +32,13 @@ class LoginActivity : AppCompatActivity() {
             val password = etPassword.text.toString()
 
             if(email == correctEmail && password == correctPassword){
-                /*
-                tvMessage.text = "Siz uğurla daxil oldunuz!"
-                tvMessage.background = ContextCompat.getDrawable(this,R.drawable.correct_credentials_message
-                 */
+
+                prefs.token = "qwertyuiop"
+                prefs.name = "Ayten"
+                prefs.surname = "Garaisayeva"
+                prefs.email = email
+                Log.i("token", prefs.token)
+                Log.i("Login Activity Fullname" , prefs.name + "" + prefs.surname)
                 startActivity(Intent(this, Main2Activity::class.java))
                 finish()
             }else{

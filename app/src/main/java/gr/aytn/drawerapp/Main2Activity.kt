@@ -1,9 +1,13 @@
 package gr.aytn.drawerapp
 
+import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -15,6 +19,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import gr.aytn.drawerapp.config.App
+import gr.aytn.drawerapp.config.prefs
 import gr.aytn.drawerapp.databinding.ActivityMain2Binding
 
 class Main2Activity : AppCompatActivity(){
@@ -26,6 +32,15 @@ class Main2Activity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
 
         binding = ActivityMain2Binding.inflate(layoutInflater)
+        val view: View = binding.navView.getHeaderView(0)
+
+
+        var txtName:TextView = view.findViewById(R.id.txtName)
+        txtName.text = prefs.name + " " + prefs.surname
+        Log.i("Main Activity Fullname" , App.prefs?.name + "" + App.prefs?.surname)
+        var txtEmail:TextView = view.findViewById(R.id.txtEmail)
+        txtEmail.text = prefs.email
+
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarMain2.toolbar)
@@ -42,13 +57,18 @@ class Main2Activity : AppCompatActivity(){
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.nav_logout
+                R.id.nav_home, R.id.nav_history, R.id.nav_slideshow,R.id.nav_logout
             ), drawerLayout
         )
 
 
         val logoutMenuItem = binding.navView.menu.findItem(R.id.nav_logout)
+
         logoutMenuItem.setOnMenuItemClickListener {
+            prefs.token = ""
+            prefs.name = ""
+            prefs.surname = ""
+            prefs.email = ""
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
             true

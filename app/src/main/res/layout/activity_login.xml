@@ -29,6 +29,7 @@
             android:textSize="20sp"
             android:layout_margin="15dp"
             />
+
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
@@ -37,7 +38,6 @@
             android:inputType="textEmailAddress"
             android:selectAllOnFocus="true"
             android:layout_margin="15dp"/>
-
 
         <EditText
             android:id="@+id/password"
