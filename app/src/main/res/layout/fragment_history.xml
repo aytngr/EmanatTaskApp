@@ -18,7 +18,7 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="120dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -26,36 +26,53 @@
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
                 android:src="@drawable/online"/>
 
             <ImageView
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
                 android:src="@drawable/online"/>
             <ImageView
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
                 android:src="@drawable/online"/>
             <ImageView
                 android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
                 android:src="@drawable/online"/>
         </LinearLayout>
     </HorizontalScrollView>
-    <TextView
-        android:text="Sonuncular"
-        android:textStyle="bold"
-        android:layout_margin="7dp"
-        android:textSize="25sp"
-        android:textColor="@color/black"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:backgroundTint="@color/bg"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Sonuncular"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="60dp"
+            android:layout_height="43dp"
+            android:background="@null"
+            android:src="@drawable/add"
+            tools:srcCompat="@drawable/add" />
+
+    </LinearLayout>
+
 
 </LinearLayout>

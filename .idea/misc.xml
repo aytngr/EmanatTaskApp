@@ -6,8 +6,11 @@
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/drawable-v24/card_bg.xml" value="0.2703125" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/drawable-v24/history_card_bg.xml" value="0.2703125" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/drawable-v24/side_nav_bar.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/drawable/add.xml" value="0.2703125" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/drawable/delete.xml" value="0.2703125" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/drawable/rounded_corner.xml" value="0.14635416666666667" />
+        <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/drawable/shape_background.xml" value="0.2703125" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/drawable/side_nav_bar.xml" value="0.2703125" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/drawable/wrong_credentials_message.xml" value="0.2703125" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
@@ -16,14 +19,17 @@
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/activity_profile.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/activity_settings.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/add_item.xml" value="0.2536231884057971" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/app_bar_main2.xml" value="0.1793478260869565" />
+        <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/commit_row.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/content_main2.xml" value="0.1793478260869565" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/fragment_gallery.xml" value="0.1793478260869565" />
-        <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/fragment_history.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/fragment_history.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/fragment_home.xml" value="0.1793478260869565" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/fragment_logout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/fragment_retrofit_post.xml" value="0.24954710144927536" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.1793478260869565" />
-        <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/history_reycyleview_row.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/history_reycyleview_row.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/nav_header_main2.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/layout/reycyleview_row.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidStudioProjects/DrawerApp/app/src/main/res/menu/activity_main2_drawer.xml" value="0.25416666666666665" />

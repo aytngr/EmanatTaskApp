@@ -1,30 +1,5 @@
 <resources>
-    <string name="app_name">TaskApp</string>
-    <string name="title_activity_profile">ProfileActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="nav_open">Open</string>
-    <string name="nav_close">Close</string>
-
-
-    <string-array name="names">
-        <item>UltraBoost19</item>
-        <item>Clear Shampoo</item>
-        <item>FairPrice Clementi</item>
-        <item>Supersonic</item>
-        <item>iPad Pro Cover</item>
-    </string-array>
-    <string-array name="dates">
-        <item>Sun, 5 Jan</item>
-        <item>Sat, 4 Jan</item>
-        <item>Fri, 3 Jan</item>
-        <item>Thu, 2 Jan</item>
-        <item>Wed, 1 Jan</item>
-    </string-array>
-    <string name="title_activity_main2">MainActivity2</string>
+    <string name="app_name">DrawerApp</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -35,4 +10,6 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_history">History</string>
 </resources>

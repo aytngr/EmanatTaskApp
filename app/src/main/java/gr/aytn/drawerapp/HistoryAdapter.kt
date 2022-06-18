@@ -6,14 +6,25 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
+import gr.aytn.drawerapp.ui.history.HistoryFragment
+import java.security.AccessController.getContext
 
 class HistoryAdapter(private val mList: ArrayList<HistoryItem>) : RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
+
+    private lateinit var view : View
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // inflates the card_view_design view
         // that is used to hold list item
-        val view = LayoutInflater.from(parent.context)
+
+
+        view = LayoutInflater.from(parent.context)
             .inflate(R.layout.history_reycyleview_row, parent, false)
+
+
 
         return ViewHolder(view)
     }
@@ -52,9 +63,26 @@ class HistoryAdapter(private val mList: ArrayList<HistoryItem>) : RecyclerView.A
     }
 
     fun removeItem(item: HistoryItem) {
-        val position = mList.indexOf(item)
-        mList.remove(item)
-        notifyItemRemoved(position)
+        val builder = AlertDialog.Builder(view.rootView.context)
+        builder.setTitle("Delete")
+        builder.setMessage("Are you sure to delete this item?")
+        //builder.setPositiveButton("OK", DialogInterface.OnClickListener(function = x))
+
+        builder.setPositiveButton("Delete") { dialog, which ->
+            val position = mList.indexOf(item)
+            mList.remove(item)
+            notifyItemRemoved(position)
+        }
+
+        builder.setNegativeButton("Cancel") { dialog, which ->
+            dialog.dismiss()
+        }
+
+        builder.show()
+
+
+
+
     }
 
 }

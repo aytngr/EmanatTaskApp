@@ -20,6 +20,11 @@
             android:checked="false"
             android:title="@string/menu_slideshow" />
         <item
+            android:id="@+id/nav_retrofitpost"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:checked="false"
+            android:title="Retrofit Post" />
+        <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/logout"
             android:checked="false"
