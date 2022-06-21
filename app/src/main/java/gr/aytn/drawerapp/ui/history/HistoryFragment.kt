@@ -40,7 +40,7 @@ class HistoryFragment : Fragment() {
         recyclerview.layoutManager = LinearLayoutManager(getContext())
 
 
-        historyViewModel.getHistoryItemList().observe(this, Observer{
+        historyViewModel.getHistoryItemList().observe(viewLifecycleOwner, Observer{
             val adapter = HistoryAdapter(it)
             recyclerview.adapter = adapter
 
