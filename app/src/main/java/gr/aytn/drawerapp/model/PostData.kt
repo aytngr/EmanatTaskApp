@@ -7,4 +7,5 @@ data class PostData(
     @SerializedName("Customer" ) var Customer: String?,
     @SerializedName("Quantity" ) var Quantity: Int?,
     @SerializedName("Price"    ) var Price: Double?
+
         )

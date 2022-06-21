@@ -36,12 +36,13 @@ class RetrofitPostFragment : Fragment() {
         var tvResult: TextView = binding.tvResult
 
         btnPost.setOnClickListener {
+            var customer = etCustomer.text.toString()
+            var quantity = etQuantity.text.toString().toInt()
+            var price = etPrice.text.toString().toDouble()
+            retrofitPostviewModel.sendPost(PostData(1111,customer,quantity,price)).observe(viewLifecycleOwner, Observer{
+                tvResult.text = it.toString()
+            })
         }
-
-
-
-
-
 
         return root
     }

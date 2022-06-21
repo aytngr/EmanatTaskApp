@@ -2,13 +2,17 @@ package gr.aytn.drawerapp
 
 import gr.aytn.drawerapp.model.PostData
 import gr.aytn.drawerapp.network.API
+import gr.aytn.drawerapp.network.ApiUtils
 
 class MainRepository() {
-    private val myApi: API = API.getInstance()
-    fun getCommits() = myApi.getCommits()
 
-    private val myPostApi: PostAPI = PostAPI.getInstance()
-    fun createPost(postData: PostData) = myPostApi.createPost(postData)
+
+    private var mGetAPIService: API? = ApiUtils().getGetAPIService()
+    private var mPostAPIService: API? = ApiUtils().getPostAPIService()
+
+    fun getCommits() = mGetAPIService?.getCommits()
+    fun savePost(postData: PostData) = mPostAPIService?.savePost(postData)
+
 
 
 }

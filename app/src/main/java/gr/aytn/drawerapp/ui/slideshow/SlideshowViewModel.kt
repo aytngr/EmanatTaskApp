@@ -22,7 +22,7 @@ class SlideshowViewModel : ViewModel() {
     fun getCommits(): LiveData<List<Result>> {
         Log.i("fragment", "in the getcommits")
         val response = repository.getCommits()
-        response.enqueue(object : Callback<List<Result>> {
+        response?.enqueue(object : Callback<List<Result>> {
             override fun onResponse(call: Call<List<Result>>, response: Response<List<Result>>) {
                 myResponseList.postValue(response.body())
                 Log.i("fragment", "onresponse")

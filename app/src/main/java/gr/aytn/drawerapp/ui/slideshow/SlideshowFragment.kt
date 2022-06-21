@@ -41,8 +41,7 @@ class SlideshowFragment : Fragment() {
         recyclerview.layoutManager = LinearLayoutManager(getContext())
 
 
-        slideshowViewModel.getCommits().observe(this, Observer{
-
+        slideshowViewModel.getCommits().observe(viewLifecycleOwner, Observer{
             val adapter = ApiAdapter(it)
             recyclerview.adapter = adapter
         })

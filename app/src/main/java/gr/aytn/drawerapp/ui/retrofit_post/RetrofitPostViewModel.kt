@@ -18,4 +18,19 @@ class RetrofitPostViewModel : ViewModel() {
     private var repository: MainRepository = MainRepository()
     val errorMessage = MutableLiveData<String>()
 
+    fun sendPost(postData: PostData): LiveData<PostResponse> {
+        val response = repository.savePost(postData)
+        response?.enqueue(object : Callback<PostResponse> {
+            override fun onResponse(call: Call<PostResponse>, response: Response<PostResponse>) {
+                if (response.isSuccessful()){
+                    myResponse.postValue(response.body())
+                }
+            }
+            override fun onFailure(call: Call<PostResponse>, t: Throwable) {
+                errorMessage.postValue(t.message)
+            }
+        })
+        return myResponse
+    }
+
 }
